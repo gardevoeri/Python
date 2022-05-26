@@ -43,3 +43,5 @@ print("You got " + str((score / 4) * 100) + "%.")
 #colocar o if pra outros tipos de resposta incorretas
 #colocar alerta de erro pra respostas incorretas
 #colocar as respostas em multipla escolha
+
+

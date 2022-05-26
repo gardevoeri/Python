@@ -42,3 +42,4 @@ print('Goodbye!')
 
 #colocar a opção de empate
 #fazer uma mensagem para quantas vezes ouve empate
+

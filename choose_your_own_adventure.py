@@ -35,3 +35,6 @@ elif answer == "right":
 
 else:
     print('Not a valid option. You lose.')
+
+
+    
