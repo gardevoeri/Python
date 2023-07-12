@@ -1,7 +1,7 @@
-def main():
-    stuff = {"rope": 1, "torch": 6, "gold coin": 42, "dagger": 1, "arrow": 12}
+# def main():
+# stuff = {"rope": 1, "torch": 6, "gold coin": 42, "dagger": 1, "arrow": 12}
 
-    displayInventory(stuff)
+# displayInventory(stuff)
 
 
 def displayInventory(inventory):
@@ -15,4 +15,16 @@ def displayInventory(inventory):
     print(f"Total number of items: {item_total}")
 
 
-main()
+def addToInventory(inventory, addedItems):
+    for i in addedItems:
+        inventory.setdefault(i, 0)
+
+    for i in addedItems:
+        for k in inventory.keys():
+            if i == k:
+                inventory[k] += 1
+
+    return inventory
+
+
+# main()
