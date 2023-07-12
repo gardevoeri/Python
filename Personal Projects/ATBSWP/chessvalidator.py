@@ -19,17 +19,61 @@ def isValidChessBoard(board):
     position = boardDefault()
     pieces = ["pawn", "knight", "bishop", "rook", "queen", "king"]
 
-    # Checks if the players have each a maximun of 16 pieces.
+    # Check if the peaces are in valid positions on the board.
+    for k in board.keys():
+        if k not in position:
+            print("The peaces position are not in a valid board!")
+            return False
 
-    # Checks if the board has a maximun of 1 white and 1 black king.
+    # Checks if the board has only black or white pieces.
+    for i in board.values():
+        if i[0] == "b":
+            if i[1:] not in pieces:
+                print("Invalid black pieces in the board!")
+                return False
+        elif i[0] == "w":
+            if i[1:] not in pieces:
+                print("Invalid white pieces in the board!")
+                return False
+        else:
+            print("Invalid pieces in the board!")
+            return False
 
-    # Checks if the board has a maximun of 1 white and 1 black queen.
+    # Checks if the board has a maximun number of each of the pieces.
+    piecesOnBoard = {}
+    for piece in pieces:
+        for value in board.values():
+            if value[1:] == piece:
+                if value in piecesOnBoard.keys():
+                    piecesOnBoard[value] += 1
+                else:
+                    piecesOnBoard[value] = 1
 
-    # Checks if the board has a maximun of 2 white and 2 black knights, bishops and rooks.
-
-    # Check if each of the players have a maximun of 8 pawns.
-
-    # Check if the peaces are in valid position os the board.
+    for k, v in piecesOnBoard.items():
+        if k[1:] == "pawn":
+            if v > 8:
+                print("Invalid number of pawns on the board")
+                return False
+        elif k[1:] == "knight":
+            if v > 2:
+                print("Invalid number of knights on the board")
+                return False
+        elif k[1:] == "bishop":
+            if v > 2:
+                print("Invalid number of bishop on the board")
+                return False
+        elif k[1:] == "rook":
+            if v > 2:
+                print("Invalid number of rook on the board")
+                return False
+        elif k[1:] == "king":
+            if v > 1:
+                print("Invalid number of kings on the board")
+                return False
+        elif k[1:] == "queen":
+            if v > 1:
+                print("Invalid number of queens on the board")
+                return False
 
     return True
 
