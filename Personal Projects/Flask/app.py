@@ -10,3 +10,7 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 def index():
     dt_time = datetime.datetime.utcnow()
     return render_template("index.html", dt_time=dt_time)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
