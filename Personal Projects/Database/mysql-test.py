@@ -6,6 +6,10 @@ connection = mysql.connector.connect(
 
 db = connection.cursor()
 
-
 # if connection.is_connected():
 #    print("Connection estabilished...")
+
+db.execute("SELECT * FROM student")
+
+for i in db:
+    print(i)
