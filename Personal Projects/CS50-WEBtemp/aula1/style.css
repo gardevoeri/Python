@@ -17,3 +17,19 @@ section {
 .button:hover {
     border: 1px solid #bfc3c6;
 }
+
+.search-bar {
+    border-radius: 50px;
+    border: 1px solid #bfc3c6;
+    width: 50%;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.search-bar:hover {
+    box-shadow: 1px 1px 5px #bfc3c6;
+}
+
+input:focus {
+    outline: none;
+}
