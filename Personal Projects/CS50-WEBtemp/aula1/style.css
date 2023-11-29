@@ -33,3 +33,7 @@ section {
 input:focus {
     outline: none;
 }
+
+.btn-img {
+    width: 1rem;
+}
