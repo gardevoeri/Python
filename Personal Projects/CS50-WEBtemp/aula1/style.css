@@ -1,12 +1,19 @@
-body {
-  
-}
-
-header{
+header {
 border: 2px solid red;
 }
 
 section {
     border: 2px solid blue;
+}
 
+.button {
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 3px;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.button:hover {
+    border: 1px solid #bfc3c6;
 }
