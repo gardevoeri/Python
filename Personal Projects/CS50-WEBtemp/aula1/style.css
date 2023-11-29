@@ -1,13 +1,12 @@
 body {
-    background-color: aqua;
   
 }
 
 header{
-    background-color: antiquewhite;
+border: 2px solid red;
 }
 
 section {
-    background-color: blueviolet;
+    border: 2px solid blue;
 
 }
