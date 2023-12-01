@@ -1,9 +1,60 @@
-header {
-border: 2px solid red;
+a {
+    text-decoration: none;
+    color: rgb(92, 80, 80);
+}
+
+img {
+    width: 50%;
+    display: block;
+}
+input:focus {
+    outline: none;
+}
+
+.navbar {
+display: flex;
+align-items: center;
+gap: .5rem;
+float: right;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .1rem;
+}
+
+.menu > * {
+    background-color: rgb(15, 103, 103);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.profile {
+    background-color: rgb(119, 128, 128);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
 }
 
 section {
     border: 2px solid blue;
+    height: 80vh;
+
+    
+ 
+}
+section > *{
+    border: 5px solid green;
+    
+}
+
+form {
 }
 
 .button {
@@ -21,7 +72,7 @@ section {
 .search-bar {
     border-radius: 50px;
     border: 1px solid #bfc3c6;
-    width: 50%;
+    width: 60%;
     padding: .5rem;
     margin: .5rem;
 }
@@ -30,9 +81,6 @@ section {
     box-shadow: 1px 1px 5px #bfc3c6;
 }
 
-input:focus {
-    outline: none;
-}
 
 .btn-img {
     width: 1rem;
