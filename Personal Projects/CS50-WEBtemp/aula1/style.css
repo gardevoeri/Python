@@ -101,15 +101,21 @@ section {
 
 
 .btn-img {
-    width: 1rem;
+    width: 1.5rem;
+    position: absolute;
+    top: 48%;
+    right: 34%;
+
+
 }
 
 .logo-img::before {
     content:'Images';
     position: absolute;
     color: blue;
-    right: 31%;
-    top: 41%;
-    font-size: 1.5rem;
+    right: 38%;
+    top: 42%;
+    font-size: 2rem;
     
 }
+
