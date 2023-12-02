@@ -103,3 +103,13 @@ section {
 .btn-img {
     width: 1rem;
 }
+
+.logo-img::before {
+    content:'Images';
+    position: absolute;
+    color: blue;
+    right: 31%;
+    top: 41%;
+    font-size: 1.5rem;
+    
+}
