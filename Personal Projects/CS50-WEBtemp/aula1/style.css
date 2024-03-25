@@ -1,0 +1,121 @@
+a {
+    text-decoration: none;
+    color: rgb(44, 49, 49);
+}
+
+img {
+    min-width: 100px;
+    display: block;
+    
+}
+
+input:focus {
+    outline: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: .75rem;
+}
+
+
+.navbar {
+display: flex;
+gap: .5rem;
+float: right;
+align-items: center;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .1rem;
+}
+
+.menu > * {
+    background-color: rgb(119, 128, 128);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.profile {
+    background-color: rgb(119, 128, 128);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+section {
+    height: 80vh;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+
+
+}
+
+.wrapper {
+    flex: 1;
+
+}
+
+.wrapper > *{
+    margin: 0 auto;
+    
+}
+
+
+.button {
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 3px;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+.button:hover {
+    border: 1px solid #bfc3c6;
+}
+
+.search-bar {
+    border-radius: 50px;
+    border: 1px solid #bfc3c6;
+    width: 500px;
+    padding: .5rem;
+    margin: auto;
+
+}
+
+.search-bar:hover {
+    box-shadow: 1px 1px 5px #bfc3c6;
+}
+
+
+.btn-img {
+    width: 1.5rem;
+    position: absolute;
+    top: 48%;
+    right: 34%;
+
+
+}
+
+.logo-img::before {
+    content:'Images';
+    position: absolute;
+    color: blue;
+    right: 38%;
+    top: 42%;
+    font-size: 2rem;
+    
+}
+
